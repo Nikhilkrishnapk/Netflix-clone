@@ -1,0 +1,261 @@
+body{
+    margin:0;
+    font-family:'goutham',sans-serif;
+    background-color: black;
+    color:white;
+}
+.header{
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7) ) ,url(netflix-img/images/header-image.png) ;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:10px 5px;
+}
+nav button{
+    border: none;
+    outline: none;
+    color:white;
+    background-color: #db0001;
+    font-size:12px;
+    padding:7px 20px;
+    border-radius: 4px;
+    margin-left:10px;
+    cursor:pointer;
+
+}
+#nav-btn{
+    margin-right: 30px;
+}
+#logo{
+    width:150px;
+    cursor:pointer;
+    margin-left:30px;
+}
+
+.eng-btn{
+    display: inline-flex;
+    align-content: center;
+    background: transparent;
+    border:0.5px solid white;
+    padding:7px 10px;
+}
+
+.down-icon{
+    width:10px;
+    margin-left:10px;
+    margin-top: auto;
+    margin-bottom:auto;
+}
+.header-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    color:white;
+    transform: translate(-50%,-50%);
+    margin-top:100px;
+}
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 400;
+    margin-top: -34px;
+    text-align: center;
+    color:whitesmoke;
+
+}
+.header-content p{
+    text-align: center;
+    color:whitesmoke;
+}
+
+form input{
+    flex:1;
+    border:0;
+    outline:0;
+    margin-left:20px;
+    padding-left: 20px;
+    
+}
+form button{
+    background:#db0001;
+    border:none;
+    outline:none;
+    color:white;
+    font-size: 16px;
+    cursor:pointer;
+    padding:7px 20px;
+}
+form
+{
+    display:flex;
+    height:50px;
+}
+
+/* -----------features----------- */
+
+.features{
+    padding: 50px 12px;
+    font-size: 22px;
+
+}
+.row{
+    display:flex;
+    width:100%;
+    align-items: center;
+    padding:50px 0;
+}
+.txt-col{
+    flex-basis: 50%;
+    margin-bottom:20px;
+    padding: 90px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-bottom:20px;
+}
+.img-col img{
+    width:70%;
+    padding-left: 60px;
+    display: block;
+}
+.txt-col h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom:20px;
+}
+.txt-col p{
+    font-size: 20px;
+    font-weight: 200;
+   
+}
+
+/* -----------faq---------- */
+.faq h2{
+    font-size: 25px;
+    text-align: center;
+}
+.accordian{
+    margin:0px auto;
+    width:100%;
+    max-width: 750px;
+}
+.accordian li{
+    list-style: none;
+    width:100%;
+    padding:5px;
+}
+.accordian li label{
+    display:flex;
+    align-items: center;
+    padding:20px;
+    font-size:18px;
+    font-weight:500;
+    background-color: #303030;
+    margin-bottom:2px;
+    cursor:pointer;
+    position:relative;
+}
+
+label::after{
+    content:'+';
+    font-size:34px;
+    position:absolute;
+    right:20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.accordian .content{
+    background: #303030;
+    text-align: left;
+    padding:0 20px;
+    max-height:0;
+    overflow: hidden;
+    transition:max-height 0.5s ,padding 0.5s;
+}
+.accordian input[type="radio"]:checked + .content{
+    max-height: 600px;
+    padding:30px 20px;
+}
+.accordian input[type="radio"]:checked+label::after{
+    transform: rotate(135deg);
+}
+
+.faq p{
+    font-size: 13px;
+    text-align: center;
+}
+.faq form{
+    width:700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:20px;
+}
+
+/* ----------footer---------- */
+
+footer h4 a{
+    text-decoration:none;
+    color:#535252;
+}
+footer h4{
+    padding-left: 40px;
+}
+.footer-lists{
+    display:flex;
+    margin-top: 10px;
+    justify-content: space-around;
+    width:700px;
+}
+ li {
+    line-height: 40px;
+    list-style: none;
+    
+    
+}
+li a{
+    color:#535252
+}
+footer{
+    border-top: 3px solid #303030;
+    width:100%;
+    font-family: 'goutham',sans-serif;
+    font-weight: lighter;
+    color:#535252;
+    
+}
+footer .footer-main{
+    width:800px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.eng-btn-2{
+    margin-top:20px;
+    margin-left: 40px;
+    display: inline-flex;
+    align-content: center;
+    background:transparent;
+    border:0.5px solid #535252;
+    padding:7px 10px;
+    color:#535252;
+    border-radius: 4px;
+}
+
+.globe-icon{
+    
+        width:15px;
+        padding-right: 10px;
+        margin-top: auto;
+        margin-bottom:auto;
+    
+}
