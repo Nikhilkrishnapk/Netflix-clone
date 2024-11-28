@@ -182,7 +182,9 @@ input[type="radio"]{
     overflow: hidden;
     transition:max-height 0.5s ,padding 0.5s;
 }
-.accordian input[type="radio"]:checked + .content{
+.accordian input[type="radio"]:checked + .content::after{
+    
+    display: block;
     max-height: 600px;
     padding:30px 20px;
 }
